@@ -1,0 +1,184 @@
+body{
+  margin:0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 1em;
+  color:#40514E;
+}
+p{
+  line-height: 2;
+}
+hr{
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width:5%;
+  margin:100px auto;
+}
+a{
+  color:#11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin:10px 20px;
+  text-decoration: none;/*removes Underline under anchor tag*/
+}
+a:hover{
+  color:#EAF6F6;
+}
+h1{
+  /*margin:0 auto;*/
+  /*font-size: 90px; this is static size cannot be changed whether zoom in/out*/
+  /*inorder to have font size as dynamic declare them as font-size:100%;(100%=16px)
+  or font-size:1em; ( 1em=16px)*/
+  /*note:  dynamic font-size for is multiplicable so be careful.Inorder to avoid
+  such problem name font-size;5.625rem;*/
+
+  /* conclusion : Use font-size:1rem; to avoid any problems with font-size:  */
+  color:#66BFBF;
+  margin:50px auto 0 auto;
+  font-size:5.625rem;
+  line-height: 2;/*adds space above and below the element*/
+  /* margin-top:0; */
+  font-family: 'Sacramento', cursive;
+}
+h2
+{
+  color:#66BFBF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;/*changes fom bold to noraml*/
+  padding-bottom: 10px;
+}
+h3
+{
+  color:#11999E;
+  font-family: 'Montserrat', sans-serif;
+}
+div{
+  background-color: #EFFFFD;
+}
+
+/* u can change the display type to elements from inline,block,inline-block */
+/* in inline u cannot change the width,height attributes but can be changed in block */
+/* to achieve inline effects as well to change the attributes we declare it as inline-block  */
+img{
+  display:inline;
+}
+/* p{
+  display:inline;
+} */
+/* span is an inline element which is used in between block elements */
+span{
+  text-decoration: underline;
+}
+.top-container
+{
+  background-color: #EFFFFD;
+  position:relative;
+  padding-top: 100px;
+}
+.middle-container
+{
+  margin:100px 0;
+}
+.bottom-container
+{
+  background-color: #66BFBF;
+  padding : 50px 0 20px;
+}
+/* positioninghas 4 typ[es- 1.static(default) 2.relative(relative to body of page)
+3.absolute(relative to parent ) 4.fixed(fixed doesn't move on display even when we scroll)
+inorder to use absolute positioning the parent must have relative positioning
+incorporating both relative and absolute and relative positioning we achieve the desired output*/
+/*
+to center anything in the body use text-align:center; for any block which doesn't have width mentioned
+or else use margin:0 auto 0 auto;(Shortcut margin:0 auto; is valid) to center
+(auto is used to center anything )..here in this line we define
+pixels starting from top right bottom left respectively
+*/
+.middle-cloud
+{
+  position: absolute;
+  left:250px;
+  bottom:300px;
+}
+.top-cloud
+{
+  position: absolute;
+  right: 300px;
+  top:40px;
+}
+.skill-row
+{
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+}
+/*note : use float to only wrap text around an img or any other attribute but not for positioning
+use relative and absolute positioning for positioning in css*/
+.read{
+  width: 25%;
+  float: left;/* helps in wrapping text to the side of image*/
+  margin-right: 30px;
+  margin-bottom:20px;
+}
+.anime{
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+.clear-read{
+  clear: left;/*allows to clear any float attribute as mentioned in .anime and .read classes*/
+              /*clear acts as anti float*/
+}
+.clear-anime{
+  clear:right;
+}
+.intro
+{
+  width:30%;
+  margin:auto;
+}
+.contact-msg
+{
+  width:40%;
+  margin:40px auto 60px;
+}
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  -webkit-box-shadow: 1px 1px 3px #666666;
+  -moz-box-shadow: 1px 1px 3px #666666;
+  box-shadow: 1px 1px 3px #666666;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+.copyright
+{
+  color:#EAf6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+/*
+very important.....................
+note : >> We use display for changing display frm inline,block, inline-blosct among them
+       >> But we use positioning(static,relative and absolute) to position in our website*/
